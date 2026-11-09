@@ -3,152 +3,166 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- EDIT: replace "Your Name" here, in the header and in the footer -->
-  <title>Your Name | AI applications on Microsoft Foundry and Claude Code</title>
-  <meta name="description" content="I build AI applications with models on Microsoft Foundry and code written with Claude Code, then ship them as working apps.">
-  <meta name="color-scheme" content="light dark">
+  <title>Your Name | AI Applications & Agent Solutions</title>
+  <meta name="description" content="I build AI applications with models on Microsoft Foundry and Claude Code, shipping them as production-ready apps.">
+  <meta name="color-scheme" content="light">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="wrap bar">
-    <a class="brand" href="#top">Your Name</a>
-    <nav aria-label="Primary">
-      <a href="#method">How I build</a>
-      <a href="#work">Project</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="top-banner">
+    <div class="wrap" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+      <span><span>Featured</span> Build Agentic AI Workflows in Azure & Cloudflare</span>
+      <a href="#work">Explore Projects &rarr;</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#top">Your Name <span>&bull; AI Architect</span></a>
+      <nav aria-label="Primary">
+        <a href="#method">About</a>
+        <a href="#work">Projects</a>
+        <a href="#stack">Topics</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-primary" href="mailto:you@example.com" style="padding: 6px 16px; text-decoration: none; font-size: 0.9rem;">Get in touch</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
     <section class="wrap hero" id="top">
-      <h1>I build AI applications and ship them.</h1>
-      <p class="lede">Models and agents on Microsoft Foundry. Code written with Claude Code. Delivered as apps you can open and use.</p>
+      <div class="section-label"><span>01</span> &bull; Engineering & AI Architecture</div>
+      <h1>Building <em>intelligent</em> systems, for a more curious world.</h1>
+      <p class="lede">Models and multi-agent systems deployed on Microsoft Foundry. Scalable web applications written with Claude Code and shipped to Cloudflare Workers.</p>
       <div class="actions">
-        <a class="btn btn-solid" href="#work">See the live project</a>
-        <a class="btn btn-line" href="#method">How I build</a>
+        <a class="btn-primary" href="#work">See Live Project</a>
+        <a class="btn-secondary" href="#method">How I Build</a>
       </div>
 
-      <figure class="flowfig">
+      <figure class="flowfig card" style="margin-top: 48px; padding: 24px;">
         <ol class="flow" aria-label="Research Desk pipeline: question, Researcher, Analyst, Writer, executive report">
-          <li class="node io" style="--i:0"><strong>Your question</strong><span>Any topic, up to 500 characters</span></li>
-          <li class="node agent" style="--i:1"><strong>Researcher</strong><span>Searches the web, up to three times</span></li>
-          <li class="node agent" style="--i:2"><strong>Analyst</strong><span>Finds trends and risks</span></li>
-          <li class="node agent" style="--i:3"><strong>Writer</strong><span>Drafts the report in English or French</span></li>
-          <li class="node io" style="--i:4"><strong>Executive report</strong><span>Summary, full report, follow-up questions</span></li>
+          <li class="node io" style="--i:0"><strong>Your Question</strong><span>Any complex query or domain subject</span></li>
+          <li class="node agent" style="--i:1"><strong>Researcher</strong><span>Autonomous web search & retrieval</span></li>
+          <li class="node agent" style="--i:2"><strong>Analyst</strong><span>Identifies trends, patterns & insights</span></li>
+          <li class="node agent" style="--i:3"><strong>Writer</strong><span>Synthesizes executive documentation</span></li>
+          <li class="node io" style="--i:4"><strong>Structured Output</strong><span>Markdown summary & actionable insights</span></li>
         </ol>
-        <figcaption>
-          <span>Research Desk, my live project. Blue boxes call a model deployed on Microsoft Foundry.</span>
-          <button id="replay" class="replay" type="button">Replay</button>
+        <figcaption style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center;">
+          <span>Research Desk pipeline architecture — multi-agent workflow deployed on Microsoft Foundry.</span>
+          <button id="replay" class="replay" type="button">Replay Workflow</button>
         </figcaption>
       </figure>
     </section>
 
     <section class="wrap section" id="method" aria-labelledby="method-h">
-      <div class="split">
-        <h2 id="method-h">Two tools, two jobs.</h2>
+      <div class="section-label"><span>02</span> &bull; Core Philosophy</div>
+      <div class="split" style="margin-top: 16px;">
+        <h2 id="method-h">Two primary tools. <em>One seamless workflow.</em></h2>
         <div class="tools">
           <article class="tool tool-f">
             <h3>Microsoft Foundry</h3>
-            <p class="role">The model layer</p>
-            <p>I deploy the models there and point the app at them. Each agent in my apps has its own deployment, so I can tune cost and quality one step at a time and swap a model without touching the code.</p>
+            <p class="role">The Model & Agent Infrastructure</p>
+            <p>Deploy specialized model endpoints per agent role. Tune prompt schemas, safety guardrails, and model context windows independently without modifying application logic.</p>
           </article>
           <article class="tool tool-c">
             <h3>Claude Code</h3>
-            <p class="role">The build layer</p>
-            <p>I describe the change, read the diff it proposes, and run the result. It works across the whole repository, so a job like porting a Python API to a TypeScript Worker stays one reviewable change.</p>
+            <p class="role">The Full-Stack Development Engine</p>
+            <p>Accelerate iterative development across TypeScript Workers, Cloudflare Access integrations, and responsive frontend UI components using clear, reviewable pull requests.</p>
           </article>
         </div>
       </div>
 
-      <h3 class="loop-h">From idea to live app</h3>
+      <h3 class="loop-h" style="margin-top: 64px;">From Architecture to Deployment</h3>
       <ol class="loop">
         <li>
-          <span class="n">1</span>
-          <strong>Frame the job</strong>
-          <p>One user, one question the app answers, and the data it needs to answer it.</p>
+          <span class="n">i.</span>
+          <strong>Clear Over Clever</strong>
+          <p>Define clear user objectives, concise agent roles, and precise context limits.</p>
         </li>
         <li>
-          <span class="n">2</span>
-          <strong>Build in small steps</strong>
-          <p>Claude Code makes each change. I read the diff and run it before the next one.</p>
+          <span class="n">ii.</span>
+          <strong>Tested & Grounded</strong>
+          <p>Iterate using real-world datasets, evaluating accuracy, latency, and token efficiency.</p>
         </li>
         <li>
-          <span class="n">3</span>
-          <strong>Check real output</strong>
-          <p>I ask real questions, read the failures, then tighten prompts and limits, such as a cap of three searches.</p>
+          <span class="n">iii.</span>
+          <strong>Made to be Used</strong>
+          <p>Ship clean, accessible interfaces powered by Cloudflare Workers and secure auth.</p>
         </li>
         <li>
-          <span class="n">4</span>
-          <strong>Ship behind a login</strong>
-          <p>The app runs on Cloudflare. Cloudflare Access decides who can use the paid models.</p>
+          <span class="n">iv.</span>
+          <strong>Production Ready</strong>
+          <p>Protect API endpoints with token verification and Cloudflare Access controls.</p>
         </li>
       </ol>
     </section>
 
     <section class="wrap section" id="work" aria-labelledby="work-h">
-      <h2 id="work-h">Research Desk</h2>
+      <div class="section-label"><span>03</span> &bull; Featured Project</div>
+      <h2 id="work-h" style="margin-top: 16px;">Research Desk <em>Agent Platform</em></h2>
       <div class="work">
-        <div class="work-main">
-          <p class="big">Ask a question and get an executive report. Three agents search the live web, analyse what they find, and write a structured report in English or French.</p>
-          <p>The report can be copied, downloaded as Markdown, or printed. Follow-up questions run the whole pipeline again with one click.</p>
+        <div class="work-main card" style="padding: 32px;">
+          <p class="big">Submit a research prompt to receive a comprehensive executive report. Three specialized AI agents collaborate to search live web data, analyze key findings, and draft structured Markdown outputs.</p>
 
           <dl class="facts">
-            <div><dt>Models</dt><dd class="f">Microsoft Foundry, one deployment per agent</dd></div>
-            <div><dt>Built with</dt><dd class="c">Claude Code</dd></div>
-            <div><dt>Search</dt><dd>Tavily, limited to three searches per question</dd></div>
-            <div><dt>Backend</dt><dd>Cloudflare Worker in TypeScript, three short requests chained by the browser</dd></div>
-            <div><dt>Access</dt><dd>Cloudflare Access email login, with the token checked again in the Worker</dd></div>
+            <div><dt>Models</dt><dd class="f">Microsoft Foundry (per-agent deployments)</dd></div>
+            <div><dt>Build Tool</dt><dd class="c">Claude Code CLI</dd></div>
+            <div><dt>Search API</dt><dd>Tavily Web Search Integration</dd></div>
+            <div><dt>Backend</dt><dd>Cloudflare Workers (TypeScript)</dd></div>
+            <div><dt>Authentication</dt><dd>Cloudflare Access Email JWT Verification</dd></div>
           </dl>
 
-          <div class="actions">
-            <!-- EDIT: set the real URLs for the app and the source repository -->
-            <a class="btn btn-solid" href="https://multi-ai-agent-workflow.skylumina.workers.dev/">Open Research Desk</a>
-            <a class="btn btn-line" href="https://github.com/your-username/research-desk">View the source</a>
+          <div class="actions" style="margin-top: 24px;">
+            <a class="btn-primary" href="https://multi-ai-agent-workflow.skylumina.workers.dev/" target="_blank" rel="noopener">Open Live App &rarr;</a>
+            <a class="btn-secondary" href="https://github.com/your-username/research-desk" target="_blank" rel="noopener">View Repository</a>
           </div>
-          <p class="note">The app calls paid AI and search services, so it asks for an email sign-in. Contact me for an invite.</p>
         </div>
 
-        <figure class="prompt" aria-label="The prompt that started the migration">
+        <figure class="prompt card" style="padding: 24px;">
           <div class="prompt-body">
-            <p><span class="caret">&gt;</span> Migrate this Azure Static Web App to Cloudflare. Keep the same /api routes and rewrite the Python API as a Worker.</p>
-            <p><span class="caret">&gt;</span> Protect the site with Cloudflare Access email login, and have the Worker check the token too.</p>
-            <p><span class="caret">&gt;</span> Make it run locally with one command.</p>
+            <p><span class="caret">&gt;</span> Migrate Azure Static Web App to Cloudflare Workers.</p>
+            <p><span class="caret">&gt;</span> Protect endpoints using Cloudflare Access email authentication.</p>
+            <p><span class="caret">&gt;</span> Implement multi-agent orchestration for web search and summary.</p>
           </div>
-          <figcaption>Roughly how the move from Azure to Cloudflare began, as a Claude Code prompt.</figcaption>
+          <figcaption style="margin-top: 16px; color: var(--text-secondary);">Workflow prompt structure initialized via Claude Code.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="wrap section" aria-labelledby="stack-h">
-      <h2 id="stack-h">What I work with</h2>
-      <dl class="stack">
-        <div><dt>Models and agents</dt><dd>Microsoft Foundry, Azure OpenAI, the Responses API, function calling, structured output</dd></div>
-        <div><dt>Building</dt><dd>Claude Code, TypeScript, Python, Git</dd></div>
-        <div><dt>Hosting and access</dt><dd>Cloudflare Workers, Cloudflare Access, GitHub</dd></div>
-        <div><dt>Data and search</dt><dd>Tavily web search, JSON schemas for predictable output</dd></div>
+    <section class="wrap section" id="stack" aria-labelledby="stack-h">
+      <div class="section-label"><span>04</span> &bull; Technical Stack</div>
+      <h2 id="stack-h" style="margin-top: 16px;">Tools & <em>Technologies</em></h2>
+      <dl class="stack card" style="margin-top: 24px; padding: 24px 32px;">
+        <div><dt>AI & Agents</dt><dd>Microsoft Foundry, Azure OpenAI, Agent Frameworks, RAG Pipelines</dd></div>
+        <div><dt>Development</dt><dd>Claude Code, TypeScript, Python, Next.js, Cloudflare Workers</dd></div>
+        <div><dt>Security & Auth</dt><dd>Cloudflare Access, OAuth, JWT Token Validation</dd></div>
+        <div><dt>Analytics & Data</dt><dd>Power BI, SQL, Vector Stores, Structured JSON Output</dd></div>
       </dl>
     </section>
 
     <section class="wrap section" id="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Want something like this built?</h2>
-      <ul class="links">
-        <!-- EDIT: your email, GitHub and LinkedIn addresses -->
-        <li><a href="mailto:you@example.com">Email me</a></li>
-        <li><a href="https://github.com/your-username">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+      <div class="section-label"><span>05</span> &bull; Contact</div>
+      <h2 id="contact-h" style="margin-top: 16px;">Let's build something <em>extraordinary.</em></h2>
+      <ul class="links" style="margin-top: 24px;">
+        <li><a href="mailto:you@example.com">Email Me &rarr;</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub Portfolio &rarr;</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn Profile &rarr;</a></li>
       </ul>
     </section>
   </main>
 
-  <footer class="wrap foot">
-    <p>&copy; <span id="year">2026</span> Your Name. Microsoft Foundry is a trademark of Microsoft. Claude and Claude Code are trademarks of Anthropic. This site is not affiliated with either company.</p>
+  <footer class="wrap foot" style="margin-top: 80px; padding-bottom: 48px; border-top: 1px solid var(--border-subtle);">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 32px;">
+      <p>&copy; <span id="year">2026</span> Your Name. Built with Microsoft Foundry & Claude Code.</p>
+      <a href="#top" style="color: var(--accent-terracotta); text-decoration: none; font-weight: 500;">Back to top &uarr;</a>
+    </div>
   </footer>
 </body>
 </html>
