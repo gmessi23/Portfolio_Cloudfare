@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Must match the project name you choose in Cloudflare.
+  "name": "portfolio",
+  "compatibility_date": "2026-11-01",
+
+  // Static site only: no Worker code needed, Cloudflare serves everything in ./public.
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
